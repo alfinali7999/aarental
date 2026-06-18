@@ -356,6 +356,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .owl-carousel .slide-fix a:hover img.wrap-gallery2 {
         transform: scale(1.05);
     }
+     .footer-logo-container {
+        display: flex;
+        justify-content: center; /* Membuat konten di dalamnya otomatis ke tengah */
+        align-items: center;
+        text-align: center;      /* Cadangan untuk browser lama agar tetap ke tengah */
+        padding: 30px 0;         /* Jarak atas dan bawah logo */
+        width: 100%;
+        background-color: transparent; /* Bisa diganti warna lain, misal: #ffffff atau #f9f9f9 */
+    }
+
+    /* Pengaturan versi DESKTOP (Komputer/Laptop) */
+    .footer-logo {
+        width: 180px;            /* Ukuran lebar logo di desktop */
+        height: auto;            /* Menjaga proporsi tinggi agar tidak gepeng */
+        display: block;
+        margin: 0 auto;          /* Memastikan elemen gambar berada di tengah */
+    }
+
+    /* Pengaturan khusus versi MOBILE (Handphone) */
+    @media (max-width: 768px) {
+        .footer-logo-container {
+            padding: 20px 0;     /* Jarak atas bawah sedikit lebih rapat di HP */
+        }
+        .footer-logo {
+            width: 120px;        /* Ukuran lebar logo lebih kecil di HP agar proporsional */
+            margin: 0 auto;      /* Memastikan logo tetap presisi di tengah layar HP */
+        }
+    } 
+    }  
     </style>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -1100,10 +1129,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-md-3">
                         <h4 class="title-foot-default">Contact Us</h4>
                         <p class="text-foot"><b>Address: </b>Jl. Mesjid I No.55a 147, RW.eva, cosmetic, Kec. Lubuk Pakam, Kabupaten Deli Serdang, Sumatera Utara 20553</p>
-                        <p class="text-foot"><b>Whatsapp: </b><a href="https://api.whatsapp.com/send?phone=6281361314545&text=Halo,%20saya%20datang%20dari%20website%20Anda,%20unit%20apa%20saja%20yang%20saat%20ini%20ready%20ya?%20">+62 813-6131-4545</a></p>
-                    </div>
-                </div>
+                        <p class="text-foot"><b>Whatsapp: </b><a href="https://api.whatsapp.com/send?phone=6281361314545&text=Halo,%20saya%20datang%20dari%20website%20Anda,%20unit%20apa%20saja%20yang%20saat%20ini%20ready%20ya?%20">+62 813-6131-4545</a></p> 
+<img src="https://rentalmobilkualanamu.vercel.app/armilogo.png" alt="Logo Armi" class="footer-logo" width="150">
             </div>
+          
             <div class="container-fluid py-4" style="border-top:1px solid #ccc; background: #000;">
                 <div class="container">
                     <p class="text-footer">© Copyright 2026 <a href="https://rentalmobilkualanamu.vercel.app/"><b>AA Rental</b></a>. All Rights Reserved.</p>
